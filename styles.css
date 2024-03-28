@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  max-height: 100vh;
+  background: #ffffff;
+  padding-top: 6rem;
+}
+
+
+header {
+  padding: 1.7rem 3rem;
+  background-color: #297cdd;
+  display: flex;
+  justify-content: space-between;
+  max-width: 110%;
+  margin: auto;
+  align-items: center;
+  transition: .5s;
+  position: fixed; /* make the header fixed */
+  top: 0; /* position the header at the top of the page */
+  left: 0; /* position the header at the left edge of the page */
+  right: 0; /* position the header at the right edge of the page */
+  z-index: 100; /* ensure the header appears above other elements on the page */
+}
+
+/*nav*/ 
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0.7px;
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+}
+
+nav a.active,
+nav a:hover {
+  color: #000;
+  transition: all.3s ease-in-out;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 7% 10rem;
+}
+
+main{
+  padding: 25px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .text-1 {
+  color: #297cdd;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.text-2 {
+    color: #297cdd;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 10px;
+  }
+
+.wrapper .dynamic-text {
+  margin: 0;
+  height: 90px;
+  line-height: 90px;
+}
+
+.dynamic-text .type-text {
+  color: #297cdd;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  border-right: 0.15em solid;
+  overflow: hidden;
+  margin: 0 auto;
+  letter-spacing: 0;
+  animation: typing 7s steps(25, end), blink 0.9s step-end infinite;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  /* padding: 0 2rem; */
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-isi {
+  max-width: 50%;
+}
+
+.about-img img {
+  display: block;
+  width: 480px;
+  height: auto;
+}
+
+span {
+  color: #297cdd;
+}
+
+.about-isi h2 {
+  font-size: 4rem;
+  text-align: left;
+  line-height: 1.2;
+
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.about-isi h3 {
+  font-size: 1.5rem;
+ 
+}
+
+.about-isi p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contact {
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #333;
+  background: #fff;
+  border-radius: .8rem;
+  margin: .7rem 0;
+  box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .2);
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  width: 114px;
+  height: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7%;
+  background: #297cdd;
+}
+
+.footer-text p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: #fff;
+  border-radius: .8rem;
+  border: .2rem solid #297cdd;
+  outline: .2rem solid transparent;
+  transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+  outline-color: #fff;
+}
+
+
+
+/* .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7%;
+  background: #297cdd;
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: #fff;
+  border-radius: .8rem;
+  border: .2rem solid #297cdd;
+  outline: .2rem solid transparent;
+  transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+  outline-color: #fff;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: #000000;
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
